@@ -1,39 +1,50 @@
-.banerOff{
+//todo:Call to action - advertising banner above the header
+.banerOff {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 8%;
   height: 2.5rem;
-  &__text{
+
+  .text {
     display: flex;
     align-items: center;
-    span{
+
+    span {
       padding: 0 0.75rem;
     }
   }
 
-  &__goShop{
+}
+
+//todo: goshop
+.goShop {
+  //display: flex;
+  a {
     display: flex;
-    a{
-      display: flex;
-    }
-    a span{
-      color: $offText;
-      font-family: "Inter";
-      display: flex;
-    }
+    //svg path{
+    //  stroke: red;
+    //}
+  }
+
+  span {
+    color: $offText;
+    font-family: "Inter";
+    display: flex;
   }
 }
+
+
+//todo:header
 .header {
   .container {
     background-color: indianred;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 3.75rem;
   }
 
-  &__logo {
-  }
 
   &__listMenu {
     .menu {
@@ -51,3 +62,30 @@
     gap: 1rem
   }
 }
+
+
+//todo: banner one home page
+.banner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+  &__item {
+    position: relative;
+    &--text {
+      position: absolute;
+    }
+    &--img {
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .itemFlex{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    justify-content: space-between;
+  }
+  }
+
