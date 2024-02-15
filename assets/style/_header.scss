@@ -1,0 +1,27 @@
+.header {
+  .container {
+    background-color: indianred;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+  }
+
+  &__listMenu {
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+  }
+}
