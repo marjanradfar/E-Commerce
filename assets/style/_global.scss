@@ -13,9 +13,17 @@ ul  {
 }
 a{
   text-decoration: none;
-  color:$mainText;
+  color:$mainColor;
 }
 
 .container{
   margin: 0 8%;
+}
+
+h3{
+  @media screen and (max-width: 991px){
+    font-size: 14px;
+  }@media screen and (max-width:768px){
+    //font-size: 14px;
+  }
 }
