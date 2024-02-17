@@ -172,14 +172,16 @@
 }
 
 //todo:  section newsletter
-.newsletter{
+.newsletter {
   width: 100%;
   position: relative;
-  img{
+
+  img {
     width: 100%;
-    position: absolute;
+
   }
-  &__content{
+
+  &__content {
     width: 100%;
     position: absolute;
     top: 6.25rem;
@@ -189,3 +191,22 @@
     flex-direction: column;
   }
 }
+
+//todo: footer
+
+.footer {
+  width: 100%;
+  background-color: red;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  }
