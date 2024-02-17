@@ -146,16 +146,28 @@
 
 //todo:section Articles
 
-.articles{
-width: 100%;
-  &__head{
+.articles {
+  width: 100%;
+
+  &__head {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  &__item{
-    display: flex;
-    align-items: center;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+
+    &--box {
+      .boxImg {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
   }
 }
 
