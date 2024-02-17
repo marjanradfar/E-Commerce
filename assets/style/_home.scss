@@ -171,3 +171,21 @@
   }
 }
 
+//todo:  section newsletter
+.newsletter{
+  width: 100%;
+  position: relative;
+  img{
+    width: 100%;
+    position: absolute;
+  }
+  &__content{
+    width: 100%;
+    position: absolute;
+    top: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
