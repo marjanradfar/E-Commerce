@@ -85,9 +85,22 @@
 
   &__item {
     position: relative;
+    width: 100%;
 
     &--text {
+      //width: 100%;
       position: absolute;
+      margin-top: 3rem;
+      margin-left: 3rem;
+      p{
+        font-size: 3.125em;
+        margin-bottom: 0.75rem;
+        font-weight: 600;
+      }
+      .goShop{
+        width: fit-content;
+        border-bottom: 1px solid $mainColor;
+      }
     }
 
     &--img {
@@ -102,12 +115,19 @@
     flex-direction: column;
     gap: 2%;
     justify-content: space-between;
+    .bannerShop__item{
+      .bannerShop__item--text{
+        margin-top: 3rem;
+        margin-left: 3rem;
+      }
+    }
   }
 }
 
 //todo:section support
 .support {
-  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   display: flex;
   align-items: center;
   gap: 2%;
