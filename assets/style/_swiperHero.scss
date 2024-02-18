@@ -1,0 +1,45 @@
+//todo: style swiper single image in hero home page
+.singleImg{
+  .swiper-slide{
+    img{
+      width: 100%;
+    }
+  }
+  //todo: style button swiper
+  .swiper-button-next,.swiper-button-prev {
+    background-color: $backgrounWhit;
+    //width: 3.25rem;
+    //height: 3.25rem;
+    //border-radius: 50%;
+    width: 4%;
+    height: 8%;
+    border-radius: 2rem;
+    padding: 1%;
+    &::after{
+      display: none;
+    }
+  }
+  .swiper-button-disabled path{
+    stroke:#6C7275;
+  }
+  .swiper-button-disabled{
+    opacity: 1;
+  }
+  //todo: style pagination
+  .swiper-pagination{
+    margin-bottom: 2rem;
+  }
+  .swiper-pagination-bullet-active{
+    //width: 30px;
+    width: 2%!important;
+    height: 8px;
+    background-color: $backgrounWhit;
+    border-radius: 1rem;
+  }
+  .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    background-color: $backgrounWhit;
+  }
+}
