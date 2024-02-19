@@ -66,6 +66,11 @@
   }
 }
 
+.borderButton {
+  width: fit-content;
+  border-bottom: 1px solid $mainColor;
+}
+
 //todo:header
 .header {
   .container {
@@ -117,10 +122,7 @@
         font-weight: 600;
       }
 
-      .goShop {
-        width: fit-content;
-        border-bottom: 1px solid $mainColor;
-      }
+
     }
 
     &--img {
@@ -272,9 +274,6 @@
       }
 
       .goShop {
-        border-bottom: 1px solid $mainColor;
-        width: fit-content;
-
         span {
           font-weight: 600;
           color: $mainColor;
@@ -290,6 +289,9 @@
   width: 100%;
   position: relative;
   top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   img {
     width: 100%;
@@ -297,14 +299,18 @@
 
   &__content {
     position: absolute;
-    top: 6.25rem;
-    width: 100%;
+    //top: 6.25rem;
+    width: 50%;
+    //width: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
     &--title {
+      width: 100%;
+      text-align: center;
+
       p {
         font-weight: 500;
         font-size: 1.125rem;
@@ -318,28 +324,32 @@
     }
 
     &--input {
+      //width: 100%;
       display: flex;
-      width: 415px;
-      justify-content: space-between;
+      //justify-content: space-between;
+      gap: 0.5rem;
       align-items: center;
       margin-top: 2rem;
-      .email{
+
+      .email {
         //display: flex;
         position: relative;
-        img{
+
+        img {
           position: absolute;
           width: fit-content;
           margin-top: 10px;
+          margin-left: 10px;
 
         }
-        input{
+
+        input {
           border: none;
           background-color: transparent;
           width: 350px;
-          padding: 1rem;
+          padding: 1rem 2.5rem;
 
-          &::placeholder{
-            //margin-left: 2rem;
+          &::placeholder {
             padding-left: 1rem;
           }
         }
