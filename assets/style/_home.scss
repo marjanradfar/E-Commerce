@@ -12,7 +12,8 @@
     h1 {
       font-size: 6.5em;
       line-height: 6.5rem;
-      span{
+
+      span {
         color: $secondaryColor;
       }
     }
@@ -292,17 +293,58 @@
 
   img {
     width: 100%;
-
   }
 
   &__content {
-    width: 100%;
     position: absolute;
     top: 6.25rem;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    &--title {
+      p {
+        font-weight: 500;
+        font-size: 1.125rem;
+
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+      }
+    }
+
+    &--input {
+      display: flex;
+      width: 415px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+      .email{
+        //display: flex;
+        position: relative;
+        img{
+          position: absolute;
+          width: fit-content;
+          margin-top: 10px;
+
+        }
+        input{
+          border: none;
+          background-color: transparent;
+          width: 350px;
+          padding: 1rem;
+
+          &::placeholder{
+            //margin-left: 2rem;
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
   }
 }
 
