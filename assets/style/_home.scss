@@ -33,18 +33,28 @@
 //todo:Call to action - advertising banner above the header
 .banerOff {
   width: 100%;
-
   height: 2.5rem;
+  font-size: 14px;
+  @media screen and (max-width: 480px){
+    font-size: 12px;
+  }
 .container{
   margin: 0 8%;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 480px){
+    .goShop{
+      display: none;
+    }
+  }
 }
   .text {
     display: flex;
     align-items: center;
-
+    img{
+      width: 6%;
+    }
     span {
       padding: 0 0.75rem;
     }
