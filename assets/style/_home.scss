@@ -129,7 +129,6 @@
   }
 }
 
-
 //todo:section support
 .support {
   //margin: 3rem auto;
@@ -193,9 +192,10 @@
   //margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 50% 50%;
-@media screen and (max-width: 768px) {
-  grid-template-columns: 100%;
-}
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 100%;
+  }
+
   &__img {
     width: 100%;
 
@@ -216,6 +216,7 @@
     @media screen and (max-width: 991px) {
       font-size: 10px;
     }
+
     span {
       color: $offText;
     }
@@ -243,9 +244,16 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2.5rem;
-
+    font-size: 16px;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 8px;
+    }
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.5em;
+
     }
 
     span {
@@ -257,6 +265,10 @@
     display: grid;
     grid-template-columns: 32% 32% 32%;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 100%;
+      gap: 24px;
+    }
 
     &--box {
       .boxImg {
@@ -267,10 +279,21 @@
     }
 
     .boxText {
+      font-size: 16px;
+      @media screen and (max-width: 1440px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 991px) {
+        font-size: 10px;
+      }
+      //@media screen and (max-width: 768px) {
+      //  font-size: 16px;
+      //}
+
       p {
         margin-top: 1.5rem;
         margin-bottom: 0.5rem;
-        font-size: 1.25rem;
+        font-size: 1.25em;
         font-weight: 600;
       }
 
