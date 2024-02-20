@@ -193,7 +193,9 @@
   //margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 50% 50%;
-
+@media screen and (max-width: 768px) {
+  grid-template-columns: 100%;
+}
   &__img {
     width: 100%;
 
@@ -205,9 +207,15 @@
 
   &__content {
     background-color: $backgroundItem;
-    padding-left: 70px;
-    padding-top: 140px;
-
+    padding-left: 8%;
+    padding-top: 12%;
+    font-size: 16px;
+    @media screen and (max-width: 1200px) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: 991px) {
+      font-size: 10px;
+    }
     span {
       color: $offText;
     }
