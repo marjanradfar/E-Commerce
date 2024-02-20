@@ -132,52 +132,7 @@
 }
 
 //todo: bannerShop one home page
-.bannerShop {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 49% 49%;
-  gap: 2%;
 
-  &__item {
-    position: relative;
-    width: 100%;
-
-    &--text {
-      //width: 100%;
-      position: absolute;
-      margin-top: 3rem;
-      margin-left: 3rem;
-
-      p {
-        font-size: 3.125em;
-        margin-bottom: 0.75rem;
-        font-weight: 600;
-      }
-
-
-    }
-
-    &--img {
-      img {
-        width: 100%;
-      }
-    }
-  }
-
-  .itemFlex {
-    display: flex;
-    flex-direction: column;
-    gap: 2%;
-    justify-content: space-between;
-
-    .bannerShop__item {
-      .bannerShop__item--text {
-        margin-top: 3rem;
-        margin-left: 3rem;
-      }
-    }
-  }
-}
 
 //todo:section support
 .support {

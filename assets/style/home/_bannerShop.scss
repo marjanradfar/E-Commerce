@@ -1,0 +1,69 @@
+.bannerShop {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+@media screen and (max-width: 768px) {
+  grid-template-columns:100%;
+
+}
+  &__item {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    @media screen and (max-width: 1880px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 9px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 10px;
+    }
+
+    &--text {
+      position: absolute;
+      //margin-top: 3rem;
+      //margin-left: 3rem;
+      margin-top: 10%;
+      margin-left: 10%;
+
+      p {
+        font-size: 3.125em;
+        margin-bottom: 0.75rem;
+        font-weight: 600;
+        @media screen and (max-width: 1440px) {
+          font-size: 2.125em;
+        }
+      }
+
+
+    }
+
+    &--img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .itemFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      gap: 2rem;
+    }
+    .bannerShop__item {
+
+      .bannerShop__item--text {
+        margin-left: 8%;
+        bottom: 20%;
+      }
+    }
+  }
+}
