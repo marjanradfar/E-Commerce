@@ -1,12 +1,16 @@
+//todo: bannerShop one home page
+
 .bannerShop {
-  width: 100%;
   display: grid;
   grid-template-columns: 49% 49%;
   gap: 2%;
-@media screen and (max-width: 768px) {
-  grid-template-columns:100%;
+  margin-bottom: 3rem;
+  @media screen and (max-width: 768px) {
+    grid-template-columns:100%;
+    align-content: center;
 
-}
+  }
+
   &__item {
     position: relative;
     width: 100%;
@@ -58,6 +62,7 @@
     @media screen and (max-width: 768px) {
       gap: 2rem;
     }
+
     .bannerShop__item {
 
       .bannerShop__item--text {
