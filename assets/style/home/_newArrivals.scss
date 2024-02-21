@@ -1,0 +1,27 @@
+.newArrivals {
+  margin-bottom: 52px;
+  margin-top: 48px;
+  width: 100%;
+  overflow: scroll;
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding-left: 8%;
+    &--cart {
+      //width: 262px;
+      //height: 349px;
+      width: 30rem;
+      img {
+        //width: 24%;
+        width: 100%;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}

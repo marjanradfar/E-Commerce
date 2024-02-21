@@ -39,7 +39,6 @@
 
 //todo: goshop
 .goShop {
-  //display: flex;
   a {
     display: flex;
   }
@@ -53,7 +52,21 @@
 
 .borderButton {
   width: fit-content;
+  border-bottom: 1px solid $offText;
+}
+
+.black {
   border-bottom: 1px solid $mainColor;
+
+  span {
+    color: $mainColor;
+  }
+
+  a {
+    img {
+      filter: brightness(0) saturate(100%) invert(7%) sepia(1%) saturate(3678%) hue-rotate(144deg) brightness(100%) contrast(96%);
+    }
+  }
 }
 
 //todo:header
@@ -251,6 +264,7 @@
     @media screen and (max-width: 425px) {
       font-size: 8px;
     }
+
     h1 {
       font-size: 2.5em;
 
