@@ -1,20 +1,22 @@
 .newArrivals {
   margin-bottom: 52px;
   margin-top: 48px;
-  width: 100%;
-  overflow: scroll;
+
   &__wrapper {
-    width: 100%;
     display: flex;
+    justify-content: flex-start;
+    align-content: center;
     gap: 1rem;
-    padding-left: 8%;
+    overflow-x: scroll;
+    padding: 0 8%;
+    @media screen and (max-width: 768px){
+      padding: 0 2rem;
+
+    }
     &--cart {
-      //width: 262px;
-      //height: 349px;
-      width: 30rem;
+
       img {
-        //width: 24%;
-        width: 100%;
+        width:380px;
       }
 
       .content {
@@ -23,5 +25,8 @@
         align-items: flex-start;
       }
     }
+
   }
+
+
 }
