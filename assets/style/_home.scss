@@ -80,7 +80,6 @@
   }
 
   .container {
-    //background-color: indianred;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,7 +91,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2.5rem
+      gap: 2.5rem;
+
+      &__item {
+        font-size: 16px;
+        @media screen and (max-width: 991px) {
+          font-size: 12px;
+        }
+
+        a {
+          font-size: 1em;
+        }
+      }
     }
   }
 
@@ -144,7 +154,8 @@
 
 //todo:section support
 .support {
-  //margin: 3rem auto;
+  margin: 3rem auto;
+
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -250,7 +261,8 @@
 
 .articles {
   width: 100%;
-  padding: 80px 0;
+  //padding: 80px 0;
+  margin: 6% 0;
 
   &__head {
     display: flex;
@@ -401,12 +413,20 @@
 .footer {
   width: 100%;
   background-color: $mainColor;
+  font-size: 16px;
+  @media screen and (max-width: 991px) {
+    font-size: 12px;
+  }
 
   .container {
     display: flex;
     justify-content: space-between;
     padding-top: 5rem;
     margin-bottom: 3.5rem;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
   }
 
   hr {
@@ -419,11 +439,16 @@
     align-items: center;
     gap: 2rem;
     color: $ThirdText;
-
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   .space {
     color: $secondaryColor;
+    @media screen and (max-width: 768px) {
+      display: none
+    }
   }
 
   &__listMenu {
@@ -439,28 +464,47 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 2rem;
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse !important;
+    }
 
     &--text {
       display: flex;
       align-items: center;
       gap: 1.75rem;
       color: $ThirdText;
+      font-size: 16px;
+      @media screen and (max-width: 991px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+      }
 
-      a {
-        color: $ThirdText;
 
+      .contactUs {
+        display: flex;
+        gap: 28px;
+        a {
+          color: $ThirdText;
+          font-size: 1em;
+        }
       }
     }
 
     p {
       color: $FourthText;
       font-weight: 100;
+      font-size: 1em;
     }
 
     &--social {
       display: flex;
       align-items: center;
       gap: 1.5rem;
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
     }
   }
 }

@@ -1,18 +1,33 @@
 .newArrivals {
-  margin-bottom: 52px;
+  //margin-bottom: 52px;
   margin-top: 48px;
 
   &__wrapper {
     display: flex;
     justify-content: flex-start;
     align-content: center;
-    gap: 1rem;
+    gap: 2rem;
     overflow-x: scroll;
-    padding: 0 8%;
+    margin-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 3rem;
     @media screen and (max-width: 768px){
-      padding: 0 2rem;
-
+      margin-left: 2rem;
     }
+    &::-webkit-scrollbar {
+      width: 1px;
+      height: 0.5rem;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 1.25rem;
+      background: rgb(238, 238, 238);
+    }
+    &::-webkit-scrollbar-thumb {
+      //background: var(--Black, #111);
+      background: #343839;
+      border-radius: 1.25rem;
+    }
+
     &--cart {
 
       img {
@@ -23,6 +38,18 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        font-size: 16px;
+        span{
+          font-size: 1.2em;
+          font-weight: 600;
+          color: $mainColor;
+        }
+        &__price{
+          span{
+            font-size: 0.8em;
+            font-weight: 700;
+          }
+        }
       }
     }
 
