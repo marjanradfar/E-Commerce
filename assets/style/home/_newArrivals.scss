@@ -11,6 +11,10 @@
     margin-left: 8%;
     padding-right: 8%;
     padding-bottom: 3rem;
+    @media screen and (max-width: 1440px) {
+      gap: 1.5rem;
+    }
+
     @media screen and (max-width: 768px) {
       margin-left: 2rem;
     }
@@ -37,19 +41,14 @@
 
         .imgCart {
           width: 380px;
+          @media screen and (max-width: 1440px) {
+            width: 262px;
+          }
+          @media screen and (max-width: 375px) {
+            width: 231px;
+          }
         }
-        .btn{
-          position: absolute;
-          bottom: 17px;
-          left: 19px;
-          color: $ThirdText;
-          border: none;
-          width: 21.375rem;
-          height: 2.875rem;
-          background-color: $mainColor;
-          border-radius: 5px;
 
-        }
       }
 
 

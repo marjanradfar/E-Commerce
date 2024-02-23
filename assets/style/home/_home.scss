@@ -37,38 +37,6 @@
 
 }
 
-//todo: goshop
-.goShop {
-  a {
-    display: flex;
-  }
-
-  span {
-    color: $offText;
-    font-family: "Inter";
-    display: flex;
-  }
-}
-
-.borderButton {
-  width: fit-content;
-  border-bottom: 1px solid $offText;
-}
-
-.black {
-  border-bottom: 1px solid $mainColor;
-
-  span {
-    color: $mainColor;
-  }
-
-  a {
-    img {
-      filter: brightness(0) saturate(100%) invert(7%) sepia(1%) saturate(3678%) hue-rotate(144deg) brightness(100%) contrast(96%);
-    }
-  }
-}
-
 //todo:header
 .header {
   max-width: 100%;
@@ -239,6 +207,11 @@
     }
     @media screen and (max-width: 991px) {
       font-size: 10px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: -5px;
+      //padding-left: 2rem;
+      padding: 3.656rem 0 3.656rem 2rem;
     }
 
     span {
@@ -485,6 +458,7 @@
       .contactUs {
         display: flex;
         gap: 28px;
+
         a {
           color: $ThirdText;
           font-size: 1em;

@@ -1,0 +1,28 @@
+.btn {
+  position: absolute;
+  bottom: 17px;
+  left: 19px;
+  color: $ThirdText;
+  border: none;
+  width: 21.375rem;
+  height: 2.875rem;
+  background-color: $mainColor;
+  border-radius: 5px;
+
+  &:hover {
+    border: 1px solid $mainColor;
+    background-color: $ThirdText;
+    color: $mainColor;
+
+  }
+
+  @media screen and (max-width: 1440px) {
+    width: 14.375rem;
+    left: 16px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 12.674rem;
+    left: 14px;
+    height: 2.536rem;
+  }
+}

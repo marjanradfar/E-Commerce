@@ -1,0 +1,31 @@
+//todo: goshop
+.goShop {
+  a {
+    display: flex;
+  }
+
+  span {
+    color: $offText;
+    font-family: "Inter";
+    display: flex;
+  }
+}
+
+.borderButton {
+  width: fit-content;
+  border-bottom: 1px solid $offText;
+}
+
+.black {
+  border-bottom: 1px solid $mainColor;
+
+  span {
+    color: $mainColor;
+  }
+
+  a {
+    img {
+      filter: brightness(0) saturate(100%) invert(7%) sepia(1%) saturate(3678%) hue-rotate(144deg) brightness(100%) contrast(96%);
+    }
+  }
+}
