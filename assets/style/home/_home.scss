@@ -38,7 +38,6 @@
 }
 
 
-
 //todo:section support
 .support {
   margin: 3rem auto;
@@ -344,11 +343,18 @@
   }
 
   &__listMenu {
-    color: $ThirdText;
-
-    a {
-      color: $ThirdText;
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+      &__item{
+        a {
+          color:$ThirdText;
+        }
+      }
     }
+
 
   }
 

@@ -32,7 +32,15 @@
 
         a {
           font-size: 1em;
+          color: $secondaryColor;
+          font-weight: 600;
+          &:hover{
+            color: $mainColor;
+          }
         }
+      }
+      .active{
+        color: $mainColor;
       }
     }
   }
