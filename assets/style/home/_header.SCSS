@@ -1,0 +1,120 @@
+//Hamburger menu
+
+//todo:header
+.header {
+  max-width: 100%;
+
+  .desk {
+    @media screen and (max-width: 768px) {
+      display: none !important;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3.75rem;
+  }
+
+  &__listMenu {
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+
+      &__item {
+        font-size: 16px;
+        @media screen and (max-width: 991px) {
+          font-size: 12px;
+        }
+
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+  }
+
+
+  //When the screen size is 768px
+  &__mobile {
+    display: none !important;
+    @media screen and (max-width: 768px) {
+      display: flex !important;
+    }
+
+    &--logo {
+      display: flex;
+      gap: 4px;
+
+      .hamburgerIcon {
+        width: 32px;
+
+      }
+
+      img {
+        width: 70px;
+      }
+    }
+
+    &--purchase {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .purchaseNum {
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 100%;
+        padding: 12px;
+        background-color: $mainColor;
+        color: $ThirdText;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .hamburgerMenu {
+    display: none;
+    position: fixed;
+  }
+
+  .show-menu {
+    display: flex;
+  }
+}
+
+
+.hamburgerMenu{
+  &__list{
+    width: 100%;
+    &--input{
+     position: relative;
+      padding: 1rem 0;
+      img{
+        position: absolute;
+      }
+      input{
+        width: 100%;
+      }
+    }
+
+    .menu{
+      display: flex;
+
+      &__item{
+      }
+    }
+  }
+}
