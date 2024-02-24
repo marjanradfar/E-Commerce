@@ -233,20 +233,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #F2F4F6;
+  @media screen and (max-width: 480px) {
+    padding: 3rem 0;
+  }
+
+  .back {
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
 
   img {
     width: 100%;
+
   }
 
   &__content {
     position: absolute;
-    //top: 6.25rem;
-    width: 50%;
-    //width: 50rem;
+    //width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 28px;
+    @media screen and (max-width: 1440px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 991px) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 8px;
+    }
+    @media screen and (max-width: 480px) {
+      position: relative;
+    }
 
     &--title {
       width: 100%;
@@ -254,41 +276,54 @@
 
       p {
         font-weight: 500;
-        font-size: 1.125rem;
+        font-size: 1.125em;
 
       }
 
       h1 {
-        font-size: 2.5rem;
-        line-height: 4.5rem;
+        font-size: 2.5em;
+        line-height: 1.5em;
       }
     }
 
     &--input {
-      //width: 100%;
       display: flex;
-      //justify-content: space-between;
       gap: 0.5rem;
       align-items: center;
       margin-top: 2rem;
+      width: 100%;
+      justify-content: space-between;
+      @media screen and (max-width: 991px) {
+        margin-top: 1.5rem;
+      }
+      @media screen and (max-width: 768px) {
+        margin-top: 0rem;
+      }
 
       .email {
-        //display: flex;
         position: relative;
 
         img {
           position: absolute;
-          width: fit-content;
-          margin-top: 10px;
-          margin-left: 10px;
+          //width: fit-content;
+          //margin-top: 10px;
+          //margin-left: 10px;
+          margin-top: 14px;
+          margin-left: 14px;
+          width: 8%;
 
         }
 
         input {
           border: none;
           background-color: transparent;
-          width: 350px;
+          //width: 350px;
+          //width: 632px;
           padding: 1rem 2.5rem;
+          font-size: 1em;
+          @media screen and (max-width: 480px) {
+            padding: 1rem 1rem;
+          }
 
           &::placeholder {
             padding-left: 1rem;
@@ -307,6 +342,9 @@
   font-size: 16px;
   @media screen and (max-width: 991px) {
     font-size: 12px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
   }
 
   .container {
@@ -348,9 +386,10 @@
       justify-content: center;
       align-items: center;
       gap: 2.5rem;
-      &__item{
+
+      &__item {
         a {
-          color:$ThirdText;
+          color: $ThirdText;
         }
       }
     }
