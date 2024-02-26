@@ -1,28 +1,20 @@
 //todo:Call to action - advertising banner above the header
-.banerOff {
-  width: 100%;
+.navOff {
   height: 2.5rem;
   font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 480px) {
+  @include break(480) {
+    .goShop {
+      display: none;
+    }
+  }
+  @include break(480) {
     font-size: 12px;
   }
 
-  .container {
-    margin: 0 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media screen and (max-width: 480px) {
-      .goShop {
-        display: none;
-      }
-    }
-  }
-
-  .text {
+  &__content {
     display: flex;
     align-items: center;
 
@@ -40,26 +32,22 @@
 
 //todo:section support
 .support {
-  margin: 3rem auto;
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2%;
-    @media screen and (max-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-      gap: 6%;
-    }
+  //margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2%;
+  padding: 3rem 0;
+  @include break(768) {
+    grid-template-columns: 1fr 1fr;
+    gap: 6%;
   }
 
   &__item {
-    //height: 280px;
     background-color: $backgroundItem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 14% 10%;
-    //padding: 3rem 2rem;
 
     &--icon {
       width: 60px;
@@ -71,18 +59,18 @@
 
     &--text {
       font-size: 18px;
-      @media screen and (max-width: 1880px) {
+      @include break(1880) {
         font-size: 12px;
       }
-      @media screen and (max-width: 991px) {
+      @include break(991) {
         font-size: 10px;
       }
-      @media screen and (max-width: 991px) {
+      @include break(768) {
         font-size: 8px;
       }
 
       span {
-        color: $secondaryColor;
+        color: $secondaryTextColor;
         font-size: 1.2em;
       }
 
@@ -99,10 +87,9 @@
 //todo:bannerOff
 .bannerOff {
   max-width: 100%;
-  //margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 50% 50%;
-  @media screen and (max-width: 768px) {
+  @include break(768) {
     grid-template-columns: 100%;
   }
 
@@ -120,20 +107,20 @@
     padding-left: 8%;
     padding-top: 12%;
     font-size: 16px;
-    @media screen and (max-width: 1200px) {
+    @include break(1200) {
       font-size: 12px;
     }
-    @media screen and (max-width: 991px) {
+    @include break(991) {
       font-size: 10px;
     }
-    @media screen and (max-width: 768px) {
+    @include break(768) {
       margin-top: -5px;
-      //padding-left: 2rem;
       padding: 3.656rem 0 3.656rem 2rem;
     }
 
+
     span {
-      color: $offText;
+      color: $offTextColor;
     }
 
     h1 {
@@ -151,9 +138,8 @@
 //todo:section Articles
 
 .articles {
-  width: 100%;
-  //padding: 80px 0;
-  margin: 6% 0;
+  //width: 100%;
+  padding: 6% 0;
 
   &__head {
     display: flex;
@@ -161,16 +147,16 @@
     justify-content: space-between;
     margin-bottom: 2.5rem;
     font-size: 16px;
-    @media screen and (max-width: 768px) {
+    @include break(768) {
       font-size: 12px;
     }
-    @media screen and (max-width: 425px) {
+    @include break(480) {
       font-size: 8px;
     }
 
+
     h1 {
       font-size: 2.5em;
-
     }
 
     span {
@@ -182,7 +168,7 @@
     display: grid;
     grid-template-columns: 32% 32% 32%;
     justify-content: space-between;
-    @media screen and (max-width: 768px) {
+    @include break(768) {
       grid-template-columns: 100%;
       gap: 24px;
     }
@@ -197,15 +183,13 @@
 
     .boxText {
       font-size: 16px;
-      @media screen and (max-width: 1440px) {
+      @include break(1440) {
         font-size: 12px;
       }
-      @media screen and (max-width: 991px) {
+      @include break(991) {
         font-size: 10px;
       }
-      //@media screen and (max-width: 768px) {
-      //  font-size: 16px;
-      //}
+
 
       p {
         margin-top: 1.5rem;
@@ -217,7 +201,7 @@
       .goShop {
         span {
           font-weight: 600;
-          color: $mainColor;
+          color: $mainTextColor;
         }
 
       }
@@ -234,12 +218,12 @@
   justify-content: center;
   align-items: center;
   background-color: #F2F4F6;
-  @media screen and (max-width: 480px) {
+  @include break(480) {
     padding: 3rem 0;
   }
 
   .back {
-    @media screen and (max-width: 480px) {
+    @include break(480) {
       display: none;
     }
   }
@@ -251,22 +235,21 @@
 
   &__content {
     position: absolute;
-    //width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 28px;
-    @media screen and (max-width: 1440px) {
+    @include break(1440) {
       font-size: 16px;
     }
-    @media screen and (max-width: 991px) {
+    @include break(991) {
       font-size: 12px;
     }
-    @media screen and (max-width: 768px) {
+    @include break(768) {
       font-size: 8px;
     }
-    @media screen and (max-width: 480px) {
+    @include break(480) {
       position: relative;
     }
 
@@ -293,10 +276,10 @@
       margin-top: 2rem;
       width: 100%;
       justify-content: space-between;
-      @media screen and (max-width: 991px) {
+      @include break(991) {
         margin-top: 1.5rem;
       }
-      @media screen and (max-width: 768px) {
+      @include break(768) {
         margin-top: 0rem;
       }
 
@@ -305,9 +288,6 @@
 
         img {
           position: absolute;
-          //width: fit-content;
-          //margin-top: 10px;
-          //margin-left: 10px;
           margin-top: 14px;
           margin-left: 14px;
           width: 8%;
@@ -317,11 +297,9 @@
         input {
           border: none;
           background-color: transparent;
-          //width: 350px;
-          //width: 632px;
           padding: 1rem 2.5rem;
           font-size: 1em;
-          @media screen and (max-width: 480px) {
+          @include break(480) {
             padding: 1rem 1rem;
           }
 
@@ -338,70 +316,77 @@
 
 .footer {
   width: 100%;
-  background-color: $mainColor;
+  background-color: $mainTextColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 16px;
-  @media screen and (max-width: 991px) {
+  padding-top: 80px;
+  padding-bottom: 32px;
+  > * {
+    margin: 0 8%;
+
+  }
+  @include break(991) {
     font-size: 12px;
   }
-  @media screen and (max-width: 768px) {
+  @include break(768) {
     font-size: 10px;
   }
 
-  .container {
+  &__content {
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem;
-    margin-bottom: 3.5rem;
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      gap: 2.5rem;
-    }
-  }
-
-  hr {
-    margin: 0 8%;
-  }
-
-  &__logo {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    color: $ThirdText;
-    @media screen and (max-width: 768px) {
+    padding-bottom: 49px;
+    @include break(768) {
       flex-direction: column;
     }
-  }
 
-  .space {
-    color: $secondaryColor;
-    @media screen and (max-width: 768px) {
-      display: none
-    }
-  }
-
-  &__listMenu {
-    .menu {
+    &--logo {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2.5rem;
-
-      &__item {
-        a {
-          color: $ThirdText;
-        }
+      gap: 2rem;
+      color: $ThirdTextColor;
+      @include break(768) {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-bottom: 40px;
       }
     }
 
+    .space {
+      color: $secondaryTextColor;
+      @include break(768) {
+        display: none
+      }
+    }
 
+    &--listMenu {
+      .menu {
+        @include break(768) {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        &__item {
+          a {
+            color: $ThirdTextColor;
+          }
+        }
+      }
+
+
+    }
   }
 
   &__copyRight {
     display: flex;
     justify-content: space-between;
     padding-bottom: 2rem;
-    @media screen and (max-width: 768px) {
+    padding-top: 1rem;
+    @include break(768) {
       flex-direction: column-reverse !important;
     }
 
@@ -409,13 +394,14 @@
       display: flex;
       align-items: center;
       gap: 1.75rem;
-      color: $ThirdText;
+      color: $ThirdTextColor;
       font-size: 16px;
-      @media screen and (max-width: 991px) {
+      @include break(991) {
         font-size: 12px;
       }
-      @media screen and (max-width: 768px) {
+      @include break(768) {
         flex-direction: column-reverse;
+        gap: 0;
       }
 
 
@@ -424,14 +410,19 @@
         gap: 28px;
 
         a {
-          color: $ThirdText;
+          color: $ThirdTextColor;
           font-size: 1em;
+        }
+
+        @include break(768) {
+          padding-top: 2rem;
+          padding-bottom: 28px;
         }
       }
     }
 
     p {
-      color: $FourthText;
+      color: $FourthTextColor;
       font-weight: 100;
       font-size: 1em;
     }
@@ -440,9 +431,11 @@
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      @media screen and (max-width: 768px) {
+      @include break(768) {
         justify-content: center;
+        padding-top: 0.5rem;
       }
     }
   }
+
 }

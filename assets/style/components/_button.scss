@@ -2,17 +2,17 @@
   position: absolute;
   bottom: 17px;
   left: 19px;
-  color: $ThirdText;
+  color: $ThirdTextColor;
   border: none;
   width: 21.375rem;
   height: 2.875rem;
-  background-color: $mainColor;
+  background-color: $mainTextColor;
   border-radius: 5px;
 
   &:hover {
-    border: 1px solid $mainColor;
-    background-color: $ThirdText;
-    color: $mainColor;
+    border: 1px solid $mainTextColor;
+    background-color: $ThirdTextColor;
+    color: $mainTextColor;
 
   }
 

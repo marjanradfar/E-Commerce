@@ -11,7 +11,7 @@
     margin-left: 8%;
     padding-right: 8%;
     padding-bottom: 3rem;
-    @media screen and (max-width: 1440px) {
+    @include break (1440) {
       gap: 1.5rem;
     }
 
@@ -62,7 +62,7 @@
         span {
           font-size: 1.2em;
           font-weight: 600;
-          color: $mainColor;
+          color: $mainTextColor;
         }
 
         &__rating {

@@ -8,29 +8,27 @@
 </head>
 <body>
 <!--Call to action - advertising banner above the header-->
-<div class="banerOff">
-    <div class="container">
-        <div class="text">
-            <img src="../assets/image/icon/ticket-percent.svg"/>
-            <span>30% off storewide — Limited time! </span>
-        </div>
-        <div class="goShop borderButton ">
-            <a href="#">
-                <span>Shop Now</span>
-                <img src="../assets/image/icon/arrow-right.svg"/>
-            </a>
-        </div>
+<div class="navOff container">
+    <div class="navOff__content">
+        <img src="../assets/image/icon/ticket-percent.svg"/>
+        <span>30% off storewide — Limited time! </span>
+    </div>
+    <div class="goShop borderButton ">
+        <a href="#">
+            <span>Shop Now</span>
+            <img src="../assets/image/icon/arrow-right.svg"/>
+        </a>
     </div>
 
 </div>
 
 
 <header class="header">
-    <section class="desk container">
-        <div class="logo">
+    <section class="header__desk container">
+        <div class="header__desk--logo">
             <img src="../assets/image/3legant.svg">
         </div>
-        <nav class="header__listMenu">
+        <nav class="header__desk--listMenu">
             <ul class="menu">
                 <li class="menu__item "><a href="#" class="active">Home</a></li>
                 <li class="menu__item"><a href="#">Shop</a></li>
@@ -39,7 +37,7 @@
             </ul>
 
         </nav>
-        <nav class="header__toolbar">
+        <nav class="header__desk--toolbar">
             <img src="../assets/image/icon/search.svg">
             <img src="../assets/image/icon/userCircle.svg">
             <img src="../assets/image/icon/shoppingBag.svg">
@@ -49,13 +47,11 @@
     <!--When the screen size is 768px-->
     <div class="header__mobile container">
         <div class="header__mobile--logo">
-            <div id="img" class="hamburgerIcon-container">
-                <img src="../assets/image/icon/ham.svg" class="hamburgerIcon" />
-            </div>
+            <img src="../assets/image/icon/ham.svg" class="hamburgerIcon"/>
             <img src="../assets/image/3legant.svg" alt="logo"/>
         </div>
         <div class="header__mobile--purchase">
-            <img src="../assets/image/icon/shoppingBag.svg" class="purchaseIcon">
+            <img src="../assets/image/icon/shoppingBag.svg">
             <span class="purchaseNum">2</span>
         </div>
     </div>
@@ -65,7 +61,7 @@
             <img src="../assets/image/icon/close.svg" class="closeIcon"/>
         </div>
         <div class="hamburgerMenu__input">
-            <img src="../assets/image/icon/search.svg" />
+            <img src="../assets/image/icon/search.svg"/>
             <input type="text" placeholder="search"/></div>
         <div class="hamburgerMenu__list">
             <nav>
@@ -85,59 +81,41 @@
 <!--The main body of the  Home page-->
 <main>
 
-    <div class="heroBanner ">
-        <div class="container">
-            <div class="swiper singleImg">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="../assets/image/banner/bannerSwiperHome.png"/>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../assets/image/banner/bannerSwiperHome.png"/>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../assets/image/banner/bannerSwiperHome.png"/>
-                    </div>
+    <div class="heroBanner container">
+        <div class="swiper singleImg">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../assets/image/banner/bannerSwiperHome.png"/>
                 </div>
-                <div class="swiper-button-next">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.66666 16H25.3333" stroke="#141718" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M17.3333 24L25.3333 16" stroke="#141718" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M17.3333 8L25.3333 16" stroke="#141718" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-
+                <div class="swiper-slide">
+                    <img src="../assets/image/banner/bannerSwiperHome.png"/>
                 </div>
-                <div class="swiper-button-prev">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.66669 16H25.3334" stroke="#141718" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M6.66669 16L14.6667 24" stroke="#141718" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                        <path d="M6.66669 16L14.6667 8" stroke="#141718" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-
+                <div class="swiper-slide">
+                    <img src="../assets/image/banner/bannerSwiperHome.png"/>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-            <div class="heroBanner__content">
-                <h1 class="heroBanner__content--title">
-                    Simply Unique<span>/</span><br>
-                    Simply Better<span>.</span>
-                </h1>
-                <p class="heroBanner__content--info">
-                    3legantis a gift & decorations store based in HCMC,
-                    <br>
-                    Vietnam. Est since 2019.
-                </p>
-                <p class="heroBanner__content--info mobile">
-                    3legantis <span>a gift & decorations store based in HCMC,
+            <div class="swiper-button-next">
+                <img src="../assets/image/icon/swiper arrow/arrow-right.svg">
+            </div>
+            <div class="swiper-button-prev">
+                <img src="../assets/image/icon/swiper arrow/arrow-left.svg"/>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="heroBanner__content">
+            <h1 class="heroBanner__content--title">
+                Simply Unique<span>/</span><br>
+                Simply Better<span>.</span>
+            </h1>
+            <p class="heroBanner__content--info">
+                3legantis a gift & decorations store based in HCMC,
+                <br>
+                Vietnam. Est since 2019.
+            </p>
+            <p class="heroBanner__content--info mobile">
+                3legantis <span>a gift & decorations store based in HCMC,
                     Vietnam. Est since 2019.</span>
-                </p>
-            </div>
+            </p>
         </div>
     </div>
     <!--    banner one home page-->
@@ -329,43 +307,41 @@
 
 
     <!-- section Support home page-->
-    <section class="support">
-        <div class="container">
-            <div class="support__item">
-                <div class="support__item--icon">
-                    <img src="../assets/image/support/fastDelivery.svg"/>
-                </div>
-                <div class="support__item--text">
-                    <h2>Free Shipping</h2>
-                    <span>Order above $200</span>
-                </div>
+    <section class="support container">
+        <div class="support__item">
+            <div class="support__item--icon">
+                <img src="../assets/image/support/fastDelivery.svg"/>
             </div>
-            <div class="support__item">
-                <div class="support__item--icon">
-                    <img src="../assets/image/support/fastDelivery.svg"/>
-                </div>
-                <div class="support__item--text">
-                    <h2>Free Shipping</h2>
-                    <span>Order above $200</span>
-                </div>
+            <div class="support__item--text">
+                <h2>Free Shipping</h2>
+                <span>Order above $200</span>
             </div>
-            <div class="support__item">
-                <div class="support__item--icon">
-                    <img src="../assets/image/support/fastDelivery.svg"/>
-                </div>
-                <div class="support__item--text">
-                    <h2>Free Shipping</h2>
-                    <span>Order above $200</span>
-                </div>
+        </div>
+        <div class="support__item">
+            <div class="support__item--icon">
+                <img src="../assets/image/support/fastDelivery.svg"/>
             </div>
-            <div class="support__item">
-                <div class="support__item--icon">
-                    <img src="../assets/image/support/fastDelivery.svg"/>
-                </div>
-                <div class="support__item--text">
-                    <h2>Free Shipping</h2>
-                    <span>Order above $200</span>
-                </div>
+            <div class="support__item--text">
+                <h2>Free Shipping</h2>
+                <span>Order above $200</span>
+            </div>
+        </div>
+        <div class="support__item">
+            <div class="support__item--icon">
+                <img src="../assets/image/support/fastDelivery.svg"/>
+            </div>
+            <div class="support__item--text">
+                <h2>Free Shipping</h2>
+                <span>Order above $200</span>
+            </div>
+        </div>
+        <div class="support__item">
+            <div class="support__item--icon">
+                <img src="../assets/image/support/fastDelivery.svg"/>
+            </div>
+            <div class="support__item--text">
+                <h2>Free Shipping</h2>
+                <span>Order above $200</span>
             </div>
         </div>
     </section>
@@ -392,58 +368,56 @@
         </div>
     </div>
     <!--section Articles-->
-    <section class="articles">
-        <div class="container">
-            <div class="articles__head">
-                <h1>Articles</h1>
-                <div class="goShop borderButton black">
-                    <a href="#">
-                        <span>More Products</span>
-                        <img src="../assets/image/icon/arrow-right.svg"/>
-                    </a>
+    <section class="articles container">
+        <div class="articles__head">
+            <h1>Articles</h1>
+            <div class="goShop borderButton black">
+                <a href="#">
+                    <span>More Products</span>
+                    <img src="../assets/image/icon/arrow-right.svg"/>
+                </a>
+            </div>
+        </div>
+        <div class="articles__item">
+            <div class="articles__item--box">
+                <div class="boxImg">
+                    <img src="../assets/image/articles/decoreHome.png"/>
+                </div>
+                <div class="boxText">
+                    <p>7 ways to decor your home</p>
+                    <div class="goShop borderButton black">
+                        <a href="#">
+                            <span>More Products</span>
+                            <img src="../assets/image/icon/arrow-right.svg"/>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="articles__item">
-                <div class="articles__item--box">
-                    <div class="boxImg">
-                        <img src="../assets/image/articles/decoreHome.png"/>
-                    </div>
-                    <div class="boxText">
-                        <p>7 ways to decor your home</p>
-                        <div class="goShop borderButton black">
-                            <a href="#">
-                                <span>More Products</span>
-                                <img src="../assets/image/icon/arrow-right.svg"/>
-                            </a>
-                        </div>
+            <div class="articles__item--box">
+                <div class="boxImg">
+                    <img src="../assets/image/articles/decoreHome.png"/>
+                </div>
+                <div class="boxText">
+                    <p>7 ways to decor your home</p>
+                    <div class="goShop borderButton black">
+                        <a href="#">
+                            <span>More Products</span>
+                            <img src="../assets/image/icon/arrow-right.svg"/>
+                        </a>
                     </div>
                 </div>
-                <div class="articles__item--box">
-                    <div class="boxImg">
-                        <img src="../assets/image/articles/decoreHome.png"/>
-                    </div>
-                    <div class="boxText">
-                        <p>7 ways to decor your home</p>
-                        <div class="goShop borderButton black">
-                            <a href="#">
-                                <span>More Products</span>
-                                <img src="../assets/image/icon/arrow-right.svg"/>
-                            </a>
-                        </div>
-                    </div>
+            </div>
+            <div class="articles__item--box">
+                <div class="boxImg">
+                    <img src="../assets/image/articles/decoreHome.png"/>
                 </div>
-                <div class="articles__item--box">
-                    <div class="boxImg">
-                        <img src="../assets/image/articles/decoreHome.png"/>
-                    </div>
-                    <div class="boxText">
-                        <p>7 ways to decor your home</p>
-                        <div class="goShop borderButton black">
-                            <a href="#">
-                                <span>More Products</span>
-                                <img src="../assets/image/icon/arrow-right.svg"/>
-                            </a>
-                        </div>
+                <div class="boxText">
+                    <p>7 ways to decor your home</p>
+                    <div class="goShop borderButton black">
+                        <a href="#">
+                            <span>More Products</span>
+                            <img src="../assets/image/icon/arrow-right.svg"/>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -471,14 +445,14 @@
     </div>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer__logo">
+        <div class="footer__content ">
+            <div class="footer__content--logo">
                 <div class="logo">
                     <img src="../assets/image/3legantWhite.svg">
                 </div>
                 <div class="space">|</div>
                 <p>Gift & Decoration Store</p></div>
-            <nav class=" footer__listMenu">
+            <nav class="footer__content--listMenu">
                 <ul class="menu">
                     <li class="menu__item"><a href="#">Home</a></li>
                     <li class="menu__item"><a href="#">Shop</a></li>
@@ -488,7 +462,7 @@
             </nav>
         </div>
         <hr/>
-        <div class="footer__copyRight container">
+        <div class="footer__copyRight ">
             <div class="footer__copyRight--text">
                 <p>Copyright © 2023 3legant. All rights reserved</p>
                 <div class="contactUs">
@@ -502,6 +476,7 @@
                 <img src="../assets/image/icon/youtube.svg"/>
             </div>
         </div>
+
     </footer>
 
 

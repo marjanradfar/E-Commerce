@@ -1,37 +1,37 @@
 //todo:swiper top home page
 .heroBanner {
-  width: 100%;
+  //width: 100%;
 
   &__content {
     font-size: 16px;
-    @media screen and (max-width: 1550px) {
+    @include break(1550) {
       font-size: 12px;
     }
-    @media screen and (max-width: 1024px) {
+    @include break(1024) {
       font-size: 9px;
     }
     display: grid;
     grid-template-columns: 50% 50%;
     margin-top: 2rem;
     margin-bottom: 2.5rem;
-    @media screen and (max-width: 768px) {
+    @include break(768) {
       grid-template-columns: 100%;
     }
-    @media screen and (max-width: 425px) {
+    @include break(480) {
       margin-top: 0.5rem;
     }
 
     h1 {
       font-size: 6.5em;
       line-height: normal;
-      @media screen and (max-width: 1880px) {
+      @include break(1880) {
         font-size: 4.5em;
       }
-      @media screen and (max-width: 768px) {
+      @include break(768) {
         text-align: center;
         margin-bottom: 0.3em;
       }
-      @media screen and (max-width: 425px) {
+      @include break(480) {
         font-size: 3.75em;
         text-align: left;
       }
@@ -45,18 +45,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      @media screen and (max-width: 425px) {
+      @include break(480) {
         display: none;
       }
     }
 
     .mobile {
       display: none;
-      @media screen and (max-width: 425px) {
+      @include break(480) {
         display: block;
         font-size: 1.2em;
         span {
-          color: $secondaryColor;
+          color: $secondaryTextColor;
         }
 
       }

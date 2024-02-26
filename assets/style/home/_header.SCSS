@@ -1,70 +1,42 @@
-//Hamburger menu
-
 //todo:header
 .header {
   max-width: 100%;
 
-  .desk {
-    @media screen and (max-width: 768px) {
-      display: none !important;
-    }
-  }
-
-  .container {
+  &__desk {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 3.75rem;
-  }
 
-  &__listMenu {
-    .menu {
+    @include break(768) {
+      display: none !important;
+    }
+
+    &--toolbar {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2.5rem;
-
-      &__item {
-        font-size: 16px;
-        @media screen and (max-width: 991px) {
-          font-size: 12px;
-        }
-
-        a {
-          font-size: 1em;
-          color: $secondaryColor;
-          font-weight: 600;
-
-          &:hover {
-            color: $mainColor;
-          }
-        }
-      }
-
-      .active {
-        color: $mainColor;
-      }
+      gap: 1rem
     }
-  }
 
-  &__toolbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem
   }
 
 
   //When the screen size is 768px
   &__mobile {
-    display: none !important;
-    @media screen and (max-width: 768px) {
-      display: flex !important;
+    display: none;
+    height: 60px;
+    @include break(768) {
+      display: flex;
+      justify-content: space-between;
+
     }
+
 
     &--logo {
       display: flex;
       gap: 4px;
+      align-items: center;
 
       .hamburgerIcon {
         width: 32px;
@@ -85,8 +57,8 @@
         height: 1.25rem;
         border-radius: 100%;
         padding: 12px;
-        background-color: $mainColor;
-        color: $ThirdText;
+        background-color: $mainTextColor;
+        color: $ThirdTextColor;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -130,7 +102,7 @@
         //border: none;
         border-radius: 6px;
         font-size: 14px;
-        border: 1px solid $secondaryColor;
+        border: 1px solid $secondaryTextColor;
       }
     }
 
@@ -156,7 +128,7 @@
             border-bottom: 1px solid #E8ECEF;
 
             a {
-              color: $mainColor;
+              color: $mainTextColor;
             }
           }
         }

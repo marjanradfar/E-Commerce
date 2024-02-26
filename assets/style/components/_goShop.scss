@@ -5,7 +5,7 @@
   }
 
   span {
-    color: $offText;
+    color: $offTextColor;
     font-family: "Inter";
     display: flex;
   }
@@ -13,14 +13,14 @@
 
 .borderButton {
   width: fit-content;
-  border-bottom: 1px solid $offText;
+  border-bottom: 1px solid $offTextColor;
 }
 
 .black {
-  border-bottom: 1px solid $mainColor;
+  border-bottom: 1px solid $mainTextColor;
 
   span {
-    color: $mainColor;
+    color: $mainTextColor;
   }
 
   a {

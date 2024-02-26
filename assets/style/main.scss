@@ -1,4 +1,5 @@
 @import "base/variable";
+@import "base/responsive";
 @import "base/global";
 @import "base/font";
 
@@ -9,7 +10,8 @@
 @import "./home/bannerShop";
 @import "./home/newArrivals";
 @import "home/header";
+
 //todo: Commonly used styles
-@import "layout/goShop";
-@import "layout/button";
+@import "components/goShop";
+@import "components/button";
 

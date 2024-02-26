@@ -21,7 +21,7 @@
   }
   //todo: style button swiper
   .swiper-button-next,.swiper-button-prev {
-    background-color: $backgrounWhit;
+    background-color: $backgroundWhite;
     width: 4%;
     height: 8%;
     border-radius: 2rem;
@@ -44,13 +44,13 @@
     //width: 30px;
     width: 2%!important;
     height: 8px;
-    background-color: $backgrounWhit;
+    background-color: $backgroundWhite;
     border-radius: 1rem;
   }
   .swiper-pagination-bullet{
     width: 10px;
     height: 10px;
     opacity: 1;
-    background-color: $backgrounWhit;
+    background-color: $backgroundWhite;
   }
 }

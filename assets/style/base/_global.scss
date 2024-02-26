@@ -6,32 +6,68 @@
 
 body, html {
   font-family: "SpaceGrotesk";
-  background-color: $backgrounWhit;
+  background-color: $backgroundWhite;
   font-size: 16px;
 }
-body{
+
+body {
   position: relative;
 }
-ul  {
+
+ul {
   list-style-type: none;
 }
-a{
+
+a {
   text-decoration: none;
-  color:$mainColor;
+  color: $mainTextColor;
 }
 
-.container{
+.container {
   margin: 0 8%;
-  @media screen and (max-width: 768px) {
+  @include break(768) {
     margin: 0 2rem;
 
   }
 }
 
-h3{
-  @media screen and (max-width: 991px){
+h3 {
+  @include break(991) {
     font-size: 14px;
-  }@media screen and (max-width:768px){
+  }
+  @include break(768) {
     //font-size: 14px;
+  }
+}
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+
+  &__item {
+    font-size: 16px;
+    @include break(991) {
+      font-size: 12px;
+
+    }
+
+
+    a {
+      font-size: 1em;
+      color: $secondaryTextColor;
+      font-weight: 600;
+
+      &:hover {
+        color: $mainTextColor;
+      }
+    }
+  }
+
+  .active {
+    color: $mainTextColor;
   }
 }
