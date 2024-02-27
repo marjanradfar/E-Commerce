@@ -5,33 +5,18 @@
   grid-template-columns: 49% 49%;
   gap: 2%;
   margin-bottom: 3rem;
-  @media screen and (max-width: 768px) {
+  @include break(768) {
     grid-template-columns:100%;
     align-content: center;
-
   }
 
   &__item {
     position: relative;
     width: 100%;
-    font-size: 16px;
-    @media screen and (max-width: 1880px) {
-      font-size: 14px;
-    }
-    @media screen and (max-width: 1024px) {
-      font-size: 9px;
-    }
-    @media screen and (max-width: 768px) {
-      font-size: 14px;
-    }
-    @media screen and (max-width: 375px) {
-      font-size: 10px;
-    }
+
 
     &--text {
       position: absolute;
-      //margin-top: 3rem;
-      //margin-left: 3rem;
       margin-top: 10%;
       margin-left: 10%;
 
@@ -39,9 +24,13 @@
         font-size: 3.125em;
         margin-bottom: 0.75rem;
         font-weight: 600;
-        @media screen and (max-width: 1440px) {
-          font-size: 2.125em;
+        @include break(768) {
+          font-size: 4.5em;
         }
+        @include break(480) {
+          font-size: 3em;
+        }
+
       }
 
 
@@ -59,8 +48,9 @@
     flex-direction: column;
     gap: 2%;
     justify-content: space-between;
-    @media screen and (max-width: 768px) {
+    @include break(768) {
       gap: 2rem;
+
     }
 
     .bannerShop__item {

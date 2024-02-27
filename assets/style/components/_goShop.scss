@@ -2,6 +2,10 @@
 .goShop {
   a {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding-bottom: 3px;
   }
 
   span {
@@ -21,6 +25,7 @@
 
   span {
     color: $mainTextColor;
+    font-weight: 600;
   }
 
   a {
