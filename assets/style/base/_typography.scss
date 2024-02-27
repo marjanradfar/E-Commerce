@@ -1,0 +1,18 @@
+.biggestFont{
+  font-size: 6.5em;
+  line-height: normal;
+  @include break(1880) {
+    font-size: 4.5em;
+  }
+  @include break(768) {
+    text-align: center;
+    margin-bottom: 0.3em;
+  }
+  @include break(480) {
+    font-size: 3.75em;
+    text-align: left;
+  }
+
+}
+
+.mediumFont{}

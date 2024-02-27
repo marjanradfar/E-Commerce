@@ -273,40 +273,38 @@
       display: flex;
       gap: 0.5rem;
       align-items: center;
-      margin-top: 2rem;
+      margin-top:8%;
       width: 100%;
-      justify-content: space-between;
-      @include break(991) {
-        margin-top: 1.5rem;
-      }
-      @include break(768) {
-        margin-top: 0rem;
-      }
+      border-bottom: 1px solid  $secondaryTextColor;
+      padding-bottom: 2%;
+
 
       .email {
         position: relative;
+        width: 100%;
 
         img {
           position: absolute;
-          margin-top: 14px;
-          margin-left: 14px;
+          margin-top: 2%;
           width: 8%;
-
         }
 
         input {
+          width: 100%;
           border: none;
           background-color: transparent;
-          padding: 1rem 2.5rem;
           font-size: 1em;
-          @include break(480) {
-            padding: 1rem 1rem;
+          padding: 3% 3% 3% 10%;
+          //padding: 1rem 1rem 1rem 4rem;
+          &::placeholder{
+            color: $secondaryTextColor;
           }
 
-          &::placeholder {
-            padding-left: 1rem;
-          }
+
         }
+      }
+      .singUp{
+        color: $secondaryTextColor;
       }
     }
   }
@@ -323,10 +321,12 @@
   font-size: 16px;
   padding-top: 80px;
   padding-bottom: 32px;
+
   > * {
     margin: 0 8%;
 
   }
+
   @include break(991) {
     font-size: 12px;
   }
