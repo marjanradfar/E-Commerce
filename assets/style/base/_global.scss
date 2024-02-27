@@ -2,12 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
+  @include break(1440) {
+    font-size: 14px;
+  }
+  @include break(1024) {
+    font-size: 12px;
+  }
+  @include break(768) {
+    font-size: 8px;
+  }
+
 }
 
 body, html {
   font-family: "SpaceGrotesk";
   background-color: $backgroundWhite;
-  font-size: 16px;
+
 }
 
 body {
@@ -26,19 +37,19 @@ a {
 .container {
   margin: 0 8%;
   @include break(768) {
-    margin: 0 2rem;
+    margin: 0 4rem;
 
   }
 }
 
-h3 {
-  @include break(991) {
-    font-size: 14px;
-  }
-  @include break(768) {
-    //font-size: 14px;
-  }
-}
+//h3 {
+//  @include break(991) {
+//    font-size: 14px;
+//  }
+//  @include break(768) {
+//    //font-size: 14px;
+//  }
+//}
 
 
 .menu {

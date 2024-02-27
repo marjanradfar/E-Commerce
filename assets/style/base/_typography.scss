@@ -1,18 +1,26 @@
-.biggestFont{
-  font-size: 6.5em;
-  line-height: normal;
-  @include break(1880) {
-    font-size: 4.5em;
-  }
-  @include break(768) {
-    text-align: center;
-    margin-bottom: 0.3em;
-  }
-  @include break(480) {
-    font-size: 3.75em;
-    text-align: left;
-  }
+//The largest text according to Figma 80px
+.extraLargeText {
 
 }
 
-.mediumFont{}
+//According to Figma 72px
+.largeText {
+  font-size: 6em;
+  line-height: normal;
+  @include break(1880) {
+    font-size: 4em;
+  }
+  @include break(991) {
+    font-size: 3.5em;
+  }
+  @include break(768) {
+    font-size: 4.5em;
+  }
+  @include break(480) {
+    font-size: 5.5em;
+  }
+  @include break(360) {
+    font-size: 4.5em;
+  }
+
+}
