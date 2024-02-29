@@ -67,14 +67,30 @@
   }
 
   .hamburgerMenu {
-    width: 100%;
+    //width: 100%;
+    width: 375px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     top: 0;
     padding: 1.5rem 2rem 0 2rem;
     display: none;
-    background-color: red;
+    background-color: $backgroundWhite;
+
+    &::after {
+      content: "";
+      display: block;
+      position: fixed;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.496);
+      z-index: -2;
+      height: 100%;
+      left: 375px;
+      top: 0;
+      right: 0;
+      animation: red 0.3s ease-in-out;
+
+    }
 
     &__head {
       width: 100%;
@@ -139,20 +155,18 @@
   }
 }
 
+
 .anime {
-  animation: openAnimation 0.5s ease-in;
+
 }
 
-.show {
-  display: inline-block;
+.closeAnime {
+
 }
 
-@keyframes openAnimation {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100%;
-  }
-}
+
+
+
+
+
 
