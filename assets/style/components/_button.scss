@@ -16,11 +16,11 @@
 
   }
 
-  @media screen and (max-width: 1440px) {
+  @include break(1440) {
     width: 14.375rem;
     left: 16px;
   }
-  @media screen and (max-width: 375px) {
+  @include break(360) {
     width: 12.674rem;
     left: 14px;
     height: 2.536rem;

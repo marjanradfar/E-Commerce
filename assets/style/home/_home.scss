@@ -39,7 +39,10 @@
   padding: 3rem 0;
   @include break(768) {
     grid-template-columns: 1fr 1fr;
-    gap: 6%;
+    gap: 2rem;
+  }
+  @include break(480) {
+    gap: 1rem;
   }
 
   &__item {
@@ -58,25 +61,15 @@
     }
 
     &--text {
-      font-size: 18px;
-      @include break(1880) {
-        font-size: 12px;
-      }
-      @include break(991) {
-        font-size: 10px;
-      }
-      @include break(768) {
-        font-size: 8px;
-      }
+
 
       span {
         color: $secondaryTextColor;
-        font-size: 1.2em;
       }
 
       h2 {
         margin-bottom: 0.625rem;
-        font-size: 1.8em;
+
       }
     }
 
@@ -106,16 +99,10 @@
     background-color: $backgroundItem;
     padding-left: 8%;
     padding-top: 12%;
-    font-size: 16px;
-    @include break(1200) {
-      font-size: 12px;
-    }
-    @include break(991) {
-      font-size: 10px;
-    }
+
     @include break(768) {
       margin-top: -5px;
-      padding: 3.656rem 0 3.656rem 2rem;
+      padding: 3.656rem 0 3.656rem 8%;
     }
 
 
@@ -124,12 +111,10 @@
     }
 
     h1 {
-      font-size: 2.5em;
       margin: 1rem 0;
     }
 
     p {
-      font-size: 1.25em;
       margin-bottom: 1.25rem;
     }
   }
@@ -138,25 +123,23 @@
 //todo:section Articles
 
 .articles {
-  //width: 100%;
-  padding: 6% 0;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+  @include break(768) {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 
   &__head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2.5rem;
-    font-size: 16px;
+    margin-bottom: 2%;
+    //margin-bottom: 2.5rem;
     @include break(768) {
-      font-size: 12px;
-    }
-    @include break(480) {
-      font-size: 8px;
-    }
+      margin-bottom: 5%;
 
-
-    h1 {
-      font-size: 2.5em;
     }
 
     span {
@@ -170,7 +153,7 @@
     justify-content: space-between;
     @include break(768) {
       grid-template-columns: 100%;
-      gap: 24px;
+      gap: 54px;
     }
 
     &--box {
@@ -182,19 +165,11 @@
     }
 
     .boxText {
-      font-size: 16px;
-      @include break(1440) {
-        font-size: 12px;
-      }
-      @include break(991) {
-        font-size: 10px;
-      }
 
 
       p {
-        margin-top: 1.5rem;
+        margin-top: 2%;
         margin-bottom: 0.5rem;
-        font-size: 1.25em;
         font-weight: 600;
       }
 
@@ -239,16 +214,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 28px;
-    @include break(1440) {
-      font-size: 16px;
-    }
-    @include break(991) {
-      font-size: 12px;
-    }
-    @include break(768) {
-      font-size: 8px;
-    }
+
     @include break(480) {
       position: relative;
     }
@@ -259,13 +225,12 @@
 
       p {
         font-weight: 500;
-        font-size: 1.125em;
-
       }
 
-      h1 {
-        font-size: 2.5em;
-        line-height: 1.5em;
+      .extraMediumText {
+        @include break(768) {
+          font-size: 3.125em;
+        }
       }
     }
 
@@ -273,9 +238,9 @@
       display: flex;
       gap: 0.5rem;
       align-items: center;
-      margin-top:8%;
+      margin-top: 8%;
       width: 100%;
-      border-bottom: 1px solid  $secondaryTextColor;
+      border-bottom: 1px solid $secondaryTextColor;
       padding-bottom: 2%;
 
 
@@ -295,15 +260,16 @@
           background-color: transparent;
           font-size: 1em;
           padding: 3% 3% 3% 10%;
-          //padding: 1rem 1rem 1rem 4rem;
-          &::placeholder{
+
+          &::placeholder {
             color: $secondaryTextColor;
           }
 
 
         }
       }
-      .singUp{
+
+      .singUp {
         color: $secondaryTextColor;
       }
     }

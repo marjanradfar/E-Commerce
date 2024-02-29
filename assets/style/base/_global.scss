@@ -2,16 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
-  @include break(1440) {
-    font-size: 14px;
-  }
-  @include break(1024) {
-    font-size: 12px;
-  }
-  @include break(768) {
-    font-size: 8px;
-  }
+
 
 }
 
@@ -23,6 +14,19 @@ body, html {
 
 body {
   position: relative;
+  font-size: 18px;
+  @include break(1880) {
+    font-size: 16px;
+  }
+  @include break(1550) {
+    font-size: 12px;
+  }
+  @include break(1200) {
+    font-size: 10px;
+  }
+  @include break(580) {
+    font-size: 8px;
+  }
 }
 
 ul {
@@ -37,19 +41,10 @@ a {
 .container {
   margin: 0 8%;
   @include break(768) {
-    margin: 0 4rem;
+    //margin: 0 4rem;
 
   }
 }
-
-//h3 {
-//  @include break(991) {
-//    font-size: 14px;
-//  }
-//  @include break(768) {
-//    //font-size: 14px;
-//  }
-//}
 
 
 .menu {

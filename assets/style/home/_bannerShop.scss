@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 49% 49%;
   gap: 2%;
-  margin-bottom: 3rem;
+  //margin-bottom: 3rem;
   @include break(768) {
     grid-template-columns:100%;
     align-content: center;
@@ -21,16 +21,8 @@
       margin-left: 10%;
 
       p {
-        font-size: 3.125em;
         margin-bottom: 0.75rem;
         font-weight: 600;
-        @include break(768) {
-          font-size: 4.5em;
-        }
-        @include break(480) {
-          font-size: 3em;
-        }
-
       }
 
 

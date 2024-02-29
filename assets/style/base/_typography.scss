@@ -7,20 +7,64 @@
 .largeText {
   font-size: 6em;
   line-height: normal;
-  @include break(1880) {
+  @include break(991) {
     font-size: 4em;
   }
-  @include break(991) {
+  @include break(768) {
+    font-size: 6em;
+  }
+  @include break(480) {
     font-size: 3.5em;
   }
+
+
+}
+
+//According to Figma 54px
+.largeLightText{
+
+}
+
+//According to Figma 40px
+.extraMediumText{
+  font-size: 3.125em;
   @include break(768) {
     font-size: 4.5em;
   }
   @include break(480) {
-    font-size: 5.5em;
+    font-size: 3em;
   }
-  @include break(360) {
-    font-size: 4.5em;
-  }
+}
+
+//According to Figma 34px
+
+.mediumText{
 
 }
+//According to Figma 20px
+.mediumLightText{
+  font-size: 1.8em;
+}
+
+//According to Figma 18px
+.extraSmallText{
+  font-size: 1.125em;
+
+}
+
+//According to Figma 16px
+.smallText{
+  font-size: 1.2em;
+
+}
+
+//According to Figma 14px
+.smallLightText{
+  font-size: 0.8em;
+
+}
+
+
+
+
+

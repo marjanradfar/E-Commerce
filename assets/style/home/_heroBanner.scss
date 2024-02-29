@@ -23,21 +23,13 @@
     }
 
     &--info {
-      font-size: 1.5em;
+      //font-size: 1.5em;
       line-height: normal;
       font-weight: 700;
       display: flex;
       justify-content: center;
       align-items: center;
-      @include break(1880) {
-        font-size: 1.2em;
-      }
-      @include break(991) {
-        font-size: 1em;
-      }
-      @include break(768) {
-        font-size: 1.5em;
-      }
+
       @include break(480) {
         display: none;
       }

@@ -1,6 +1,8 @@
 .newArrivals {
-  //margin-bottom: 52px;
-  margin-top: 48px;
+  margin-top: 5%;
+  @include break(768) {
+    margin-top: 10%;
+  }
 
   &__wrapper {
     display: flex;
@@ -16,7 +18,7 @@
       gap: 1.5rem;
     }
 
-    @media screen and (max-width: 768px) {
+    @include break(768) {
       margin-left: 2rem;
     }
 
@@ -31,7 +33,6 @@
     }
 
     &::-webkit-scrollbar-thumb {
-      //background: var(--Black, #111);
       background: #343839;
       border-radius: 1.25rem;
     }
@@ -42,10 +43,10 @@
 
         .imgCart {
           width: 380px;
-          @media screen and (max-width: 1440px) {
+          @include break(1440) {
             width: 262px;
           }
-          @media screen and (max-width: 375px) {
+          @include break(360) {
             width: 231px;
           }
         }
@@ -61,7 +62,7 @@
         width: 100%;
 
         span {
-          font-size: 1.2em;
+          //font-size: 1.2em;
           font-weight: 600;
           color: $mainTextColor;
         }
@@ -75,7 +76,6 @@
 
         &__price {
           span {
-            font-size: 0.8em;
             font-weight: 700;
           }
         }
