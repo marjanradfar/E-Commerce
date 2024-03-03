@@ -14,7 +14,7 @@
 @font-face {
   font-family: "SpaceGrotesk";
   font-weight: 500;
-  src: url("../font/SpaceGrotesk/SpaceGrotesk-Medium.ttf");
+  src: url("../font/SpaceGrotesk/SpaceGrotesk-Medium./ttf");
 }
 
 @font-face {
@@ -83,4 +83,44 @@
   font-family: "Inter";
   font-weight: 900;
   src: url("../font/Inter/Inter-Black.ttf");
+}
+
+
+
+//todo: font fa
+//todo: font-pinar
+@font-face {
+  font-family: "Pinar";
+  font-weight: 300;
+  src: url("../font/pinar/Pinar-FD-Light.woff");
+}
+
+@font-face {
+  font-family: "Pinar";
+  font-weight: 500;
+  src: url("../font/pinar/Pinar-FD-Medium.woff");
+}
+
+@font-face {
+  font-family: "Pinar";
+  font-weight: 600;
+  src: url("../font/pinar/Pinar-FD-SemiBold.woff");
+}
+
+@font-face {
+  font-family: "Pinar";
+  font-weight: 700;
+  src: url("../font/pinar/Pinar-FD-Bold.woff");
+}
+
+@font-face {
+  font-family: "Pinar";
+  font-weight: 800;
+  src: url("../font/pinar/Pinar-FD-ExtraBold.woff");
+}
+
+@font-face {
+  font-family: "Pinar";
+  font-weight: 900;
+  src: url("../font/pinar/Pinar-FD-Black.woff");
 }
