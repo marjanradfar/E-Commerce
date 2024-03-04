@@ -1,28 +1,35 @@
-.btn {
+.btnFixCart {
   position: absolute;
-  bottom: 17px;
-  left: 19px;
-  color: $ThirdTextColor;
+  bottom: 5%;
+  left: 5%;
   border: none;
-  width: 21.375rem;
-  height: 2.875rem;
-  background-color: $mainTextColor;
   border-radius: 5px;
 
   &:hover {
     border: 1px solid $mainTextColor;
     background-color: $ThirdTextColor;
     color: $mainTextColor;
-
   }
 
-  @include break(1440) {
-    width: 14.375rem;
-    left: 16px;
-  }
-  @include break(360) {
-    width: 12.674rem;
-    left: 14px;
-    height: 2.536rem;
-  }
+
 }
+
+.discountNew {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  & > * {
+    border: none;
+    border-radius: 4px;
+  }
+
+}
+
+
+
+
