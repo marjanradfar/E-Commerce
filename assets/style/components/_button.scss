@@ -16,13 +16,16 @@
 }
 
 .discountNew {
+  direction: ltr;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 8px;
   position: absolute;
   top: 5%;
-  left: 5%;
+  left: 0;
+  right: 5%;
 
   & > * {
     border: none;

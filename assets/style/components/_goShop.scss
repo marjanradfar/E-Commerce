@@ -7,6 +7,11 @@
     align-items: center;
     gap: 0.5em;
     padding-bottom: 3px;
+
+    img {
+      width: 20%;
+      filter: brightness(0) saturate(100%) invert(49%) sepia(44%) saturate(7179%) hue-rotate(209deg) brightness(104%) contrast(100%);
+    }
   }
 
   span {
