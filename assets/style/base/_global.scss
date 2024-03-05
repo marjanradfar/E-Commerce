@@ -7,8 +7,9 @@
 }
 
 body, html {
+  direction: rtl;
   font-family: "SpaceGrotesk";
-  //font-family: "Pinar";
+  font-family: "Pinar";
   background-color: $backgroundWhite;
 
 }
@@ -38,6 +39,8 @@ ul {
 a {
   text-decoration: none;
   color: $mainTextColor;
+  font-family: "Pinar";
+
 }
 
 .container {

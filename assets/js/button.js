@@ -1,7 +1,7 @@
 // Dynamic button
 function createDynamicButton(text, color, width, height, colorText, classes) {
 
-    var button = document.createElement("button");
+    let button = document.createElement("button");
     button.textContent = text;
     button.style.backgroundColor = color;
     button.style.width = width + "%";
@@ -11,15 +11,15 @@ function createDynamicButton(text, color, width, height, colorText, classes) {
     return button;
 }
 
-var containers = document.getElementsByClassName("imgCartContainer");
+let containers = document.getElementsByClassName("imgCartContainer");
 
-// var black = createDynamicButton("Add To Cart", "black", 90, "2.875", "#FEFEFE");
+// let black = createDynamicButton("Add To Cart", "black", 90, "2.875", "#FEFEFE");
 
 // container.appendChild(black);
 
-for (var i = 0; i < containers.length; i++) {
-    var black = createDynamicButton(
-        "Add To Cart",
+for (let i = 0; i < containers.length; i++) {
+    let black = createDynamicButton(
+        "اضافه کردن به سبد خرید",
         "black",
         90,
         "2.875",
@@ -30,24 +30,24 @@ for (var i = 0; i < containers.length; i++) {
 }
 
 
-var elements = document.getElementsByClassName("discountNew");
+let elements = document.getElementsByClassName("discountNew");
 
-for (var i = 0; i < elements.length; i++) {
-    var btnNEW = createDynamicButton(
-        "NEW",
+for (let i = 0; i < elements.length; i++) {
+    let btnNEW = createDynamicButton(
+        "جدید",
         "white",
         24,
         "2",
         "black",
-        "marjan"
+        "btnNEW"
     );
-    var discount = createDynamicButton(
+    let discount = createDynamicButton(
         "-50%",
         "#38CB89",
         24,
         "2",
         "#FEFEFE",
-        "marjan"
+        "discount"
     );
     elements[i].appendChild(btnNEW);
     elements[i].appendChild(discount);

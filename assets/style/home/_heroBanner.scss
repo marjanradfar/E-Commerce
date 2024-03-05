@@ -1,5 +1,7 @@
 //todo:swiper top home page
 .heroBanner {
+  font-family: "Pinar";
+
   &__content {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -18,7 +20,7 @@
         margin-bottom: 1.2rem;
       }
       @include break(480) {
-        text-align: left;
+        text-align: right;
       }
     }
 
@@ -38,11 +40,15 @@
 
     .mobile {
       display: none;
+      font-family: "SpaceGrotesk";
+
       @include break(480) {
         display: block;
         font-size: 1.5em;
         span {
           color: $secondaryTextColor;
+          font-family: "Pinar";
+
         }
 
       }

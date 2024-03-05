@@ -5,13 +5,14 @@
 
 //According to Figma 72px
 .largeText {
-  font-size: 6em;
+  //font-size: 6em;
+  font-size: 4em;
   line-height: normal;
   @include break(991) {
-    font-size: 4em;
+    font-size: 3em;
   }
   @include break(768) {
-    font-size: 6em;
+    font-size: 4em;
   }
   @include break(480) {
     font-size: 3.5em;

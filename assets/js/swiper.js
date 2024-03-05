@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 
 const swiper = new Swiper(".singleImg", {
     scssMode: true,
+    effect: "fade",
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -15,5 +16,7 @@ const swiper = new Swiper(".singleImg", {
         el: ".swiper-pagination",
     },
     modules: [Navigation, Pagination],
+    loop:true,
+
 
 });

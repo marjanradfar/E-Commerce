@@ -17,6 +17,7 @@
   &__content {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     img {
       width: 6%;
@@ -98,7 +99,8 @@
 
   &__content {
     background-color: $backgroundItem;
-    padding-left: 8%;
+    padding-right: 8%;
+    //padding-left: 8%;
     padding-top: 12%;
 
     @include break(768) {
@@ -112,7 +114,7 @@
     }
 
     h1 {
-      margin: 1rem 0;
+      //margin: 1rem 0;
     }
 
     p {
