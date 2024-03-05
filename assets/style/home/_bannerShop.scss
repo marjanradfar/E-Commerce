@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 49% 49%;
   gap: 2%;
-  //margin-bottom: 3rem;
   @include break(768) {
     grid-template-columns:100%;
     align-content: center;
@@ -16,9 +15,11 @@
     cursor: pointer;
 
     &--text {
+      width: 100%;
+      padding-right: 10%;
+      padding-top: 6%;
       position: absolute;
-      margin-top: 10%;
-      margin-left: 10%;
+
 
       p {
         margin-bottom: 0.75rem;
@@ -48,8 +49,8 @@
     .bannerShop__item {
 
       .bannerShop__item--text {
-        margin-left: 8%;
-        bottom: 20%;
+        bottom: 14%;
+        padding-right: 60%;
       }
     }
   }
