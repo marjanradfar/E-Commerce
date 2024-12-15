@@ -8,6 +8,7 @@ A brief description of the project and its purpose.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
+- [Screenshot](#screenshot)
 
 
 ## Introduction
@@ -43,3 +44,14 @@ This project uses the following dependencies:
 * animate.css: A library for animations.
 * sass: A preprocessor for CSS.
 * swiper: A modern touch slider.
+
+
+## Screenshot
+
+Screenshot in desktop mode
+
+![Project Screenshot](assets/screenshot/screen-desk.png)
+
+Screenshot in mobile mode
+
+![Project Screenshot](assets/screenshot/sreen-mobile.png)
