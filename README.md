@@ -37,6 +37,10 @@ npm install
 ```
 npm run dev
 ```
+5. add address in location bar:
+```
+/page/Home
+```
 ## Dependencies
 This project uses the following dependencies:
 
